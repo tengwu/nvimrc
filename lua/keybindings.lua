@@ -15,6 +15,7 @@ keymap('n', '<leader>r', ':RnvimrToggle<CR>')
 keymap('n', '<leader>R', ':Ranger<CR>')
 keymap('n', '<leader>b', ':Buffers<CR>')
 keymap('n', '<leader>m', ':Marks<CR>')
+keymap('n', '<leader>t', ':Tlist<CR>')
 vim.cmd([[
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 ]])
