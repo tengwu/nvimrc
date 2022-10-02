@@ -1,19 +1,20 @@
 return require('packer').startup(function()
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use 'preservim/nerdtree'
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use 'williamboman/mason.nvim'
-  use 'sainnhe/sonokai' -- Colorscheme
-  use { 'junegunn/fzf', run = ":call fzf#install()" }
-  use { 'junegunn/fzf.vim' }
+  use 'git@github.com:wbthomason/packer.nvim.git'
+  use 'git@github.com:preservim/nerdtree.git'
+  use 'git@github.com:neovim/nvim-lspconfig.git' -- Configurations for Nvim LSP
+  use 'git@github.com:williamboman/mason.nvim.git'
+  use 'git@github.com:sainnhe/sonokai.git' -- Colorscheme
+  use { 'git@github.com:junegunn/fzf.git', run = ":call fzf#install()" }
+  use { 'git@github.com:junegunn/fzf.vim.git' }
   use {
-    'ojroques/nvim-lspfuzzy',
+    'git@github.com:ojroques/nvim-lspfuzzy.git',
     requires = {
-      {'junegunn/fzf'},
-      {'junegunn/fzf.vim'},  -- to enable preview (optional)
+      {'git@github.com:junegunn/fzf'},
+      {'git@github.com:junegunn/fzf.vim'},  -- to enable preview (optional)
     },
   }
-  use 'francoiscabrol/ranger.vim'
-  use 'kevinhwang91/rnvimr'
+  use 'git@github.com:francoiscabrol/ranger.vim.git'
+  use 'git@github.com:kevinhwang91/rnvimr.git'
+  use 'git@github.com:vim-airline/vim-airline.git'
 end)
