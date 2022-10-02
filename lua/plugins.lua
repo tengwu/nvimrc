@@ -3,13 +3,17 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'preservim/nerdtree'
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+  use 'williamboman/mason.nvim'
+  use 'sainnhe/sonokai' -- Colorscheme
+  use { 'junegunn/fzf', run = ":call fzf#install()" }
+  use { 'junegunn/fzf.vim' }
   use {
-    'MordechaiHadad/nvim-lspmanager',
-    requires = {'neovim/nvim-lspconfig'},
-    config = function()
-        require('lspmanager').setup()
-    end,
+    'ojroques/nvim-lspfuzzy',
+    requires = {
+      {'junegunn/fzf'},
+      {'junegunn/fzf.vim'},  -- to enable preview (optional)
+    },
   }
-  use 'ryanoasis/vim-devicons'
-  use 'sainnhe/sonokai'
+  use 'francoiscabrol/ranger.vim'
+  use 'kevinhwang91/rnvimr'
 end)

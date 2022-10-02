@@ -2,8 +2,6 @@ require('basic')
 require('keybindings')
 require('plugins')
 require('lspconfig').pyright.setup{}
-require('lspmanager').setup({
-    ensure_installed = {
-        "pyright",
-    }
-})
+require("mason").setup() -- Manage lsp server
+require('lsprc')
+require('lspfuzzy').setup{} -- Show lsp look-up-results in fzf window
