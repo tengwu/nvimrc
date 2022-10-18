@@ -20,4 +20,5 @@ return require('packer').startup(function()
   use 'git@github.com:neoclide/coc.nvim.git'
   use 'git@github.com:yegappan/taglist.git'
   use 'git@github.com:jiangmiao/auto-pairs.git'
+  use {'git@github.com:scalameta/nvim-metals', requires = { "git@github.com:nvim-lua/plenary.nvim" }} 
 end)
