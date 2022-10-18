@@ -18,4 +18,4 @@ vim.cmd('colorscheme tokyonight-storm')
 
 vim.g.ranger_map_keys = 0
 vim.g.Tlist_Use_Right_Window = 1
-vim.cmd.syntax('on')
+vim.cmd('syntax on')
