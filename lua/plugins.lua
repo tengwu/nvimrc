@@ -16,8 +16,8 @@ return require('packer').startup(function()
   }
   use 'git@github.com:francoiscabrol/ranger.vim.git'
   use 'git@github.com:kevinhwang91/rnvimr.git'
-  use 'git@github.com:vim-airline/vim-airline.git'
   use 'git@github.com:neoclide/coc.nvim.git'
   use 'git@github.com:yegappan/taglist.git'
   use 'git@github.com:jiangmiao/auto-pairs.git'
+  use 'git@github.com:folke/tokyonight.nvim'
 end)

@@ -39,6 +39,7 @@ local lsp_flags = {
 require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    filetypes = {'py'}
 }
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
@@ -47,6 +48,7 @@ require('lspconfig')['tsserver'].setup{
 require('lspconfig')['clangd'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    filetypes = { "c", "cpp", "objc", "objcpp" },
 }
 require('lspconfig')['sumneko_lua'].setup{
     on_attach = on_attach,
